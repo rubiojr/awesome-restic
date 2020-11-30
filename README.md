@@ -1,6 +1,6 @@
 # Awesome Restic
 
-Awesome [Restic](https://restic.net) related projects
+Awesome [Restic](https://restic.net) related projects.
 
 ## Libraries
 
