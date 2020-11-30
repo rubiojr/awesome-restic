@@ -16,7 +16,7 @@ Awesome [Restic](https://restic.net) related projects
 
 ## Documentation
 
-[RAPI](https://github.com/rubiojr/rapi) - Tools, guide and code examples to learn Restic's internals
+* [RAPI](https://github.com/rubiojr/rapi) - Tools, guide and code examples to learn Restic's internals
 
 
 ## Other
