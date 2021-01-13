@@ -8,6 +8,8 @@ Awesome [Restic](https://restic.net) related projects.
 
 * [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup
 * [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository
+* [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning
+
 
 ## Wrappers
 
