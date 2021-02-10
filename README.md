@@ -15,6 +15,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 * [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic 
 * [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup 
+* [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic 
 
 ## Documentation
 
