@@ -17,6 +17,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic 
 * [restique](https://github.com/maxkueng/restique) - A wrapper around restic with profiles 
 * [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups 
+* [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic
 
 ## Documentation
 
@@ -27,6 +28,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [BIVAC](https://github.com/camptocamp/bivac) - Backup Interface for Volumes Attached to Containers
 * [Stash](https://github.com/stashed/stash) - Backup your Kubernetes Stateful Applications
 * [k8up](https://github.com/vshn/k8up) - Kubernetes and OpenShift Backup Operator 
+* [brudi](https://github.com/mittwald/brudi) - Easy, incremental and encrypted backup creation / restoration for different backends
 
 ## Commercial
 
