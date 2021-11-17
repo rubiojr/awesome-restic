@@ -19,6 +19,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups 
 * [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic
 * [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
+* [restic-robot](https://github.com/Southclaws/restic-robot) - Scheduled restic backups, pre/post hooks, logs and Prometheus metrics
 
 ## Documentation
 
