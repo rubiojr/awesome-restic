@@ -2,7 +2,9 @@
 
 Awesome [Restic](https://restic.net) related projects.
 
-## Libraries
+## Compatible implementations
+
+* [Rustic](https://github.com/rustic-rs/rustic) - A restic-compatible backup tool written in pure Rust 
 
 ## Apps
 
@@ -20,6 +22,8 @@ Awesome [Restic](https://restic.net) related projects.
 * [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic
 * [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * [restic-robot](https://github.com/Southclaws/restic-robot) - Scheduled restic backups, pre/post hooks, logs and Prometheus metrics
+* [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
+* [restic2influx](https://github.com/hn/restic2influx) - Parse Restic status output and feed summary to influx db
 
 ## Documentation
 
