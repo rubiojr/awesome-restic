@@ -15,6 +15,7 @@ Awesome [Restic](https://restic.net) related projects.
 ## Wrappers
 
 * [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic 
+* [crestic](https://github.com/nils-werner/crestic) - Configurable restic wrapper with support for profiles and environments
 * [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup 
 * [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic 
 * [restique](https://github.com/maxkueng/restique) - A wrapper around restic with profiles 
