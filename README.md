@@ -25,6 +25,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [restic-robot](https://github.com/Southclaws/restic-robot) - Scheduled restic backups, pre/post hooks, logs and Prometheus metrics
 * [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
 * [restic2influx](https://github.com/hn/restic2influx) - Parse Restic status output and feed summary to influx db
+* [restic-wrapper](https://github.com/peterrus/restic-wrapper) - Simple bash wrapper to source .env configuration files for Restic (and optionally rclone).
 
 ## Documentation
 
