@@ -40,6 +40,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [Stash](https://github.com/stashed/stash) - Backup your Kubernetes Stateful Applications
 * [k8up](https://github.com/vshn/k8up) - Kubernetes and OpenShift Backup Operator 
 * [brudi](https://github.com/mittwald/brudi) - Easy, incremental and encrypted backup creation / restoration for different backends
+* [volsync](https://github.com/backube/volsync) - Asynchronous data replication for Kubernetes volumes
 
 ## Commercial
 
