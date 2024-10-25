@@ -18,6 +18,10 @@ Awesome [Restic](https://restic.net) related projects.
 * [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
 * [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 
+## Mobile
+
+* [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
+
 ## Wrappers
 
 * [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic 
