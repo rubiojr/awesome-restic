@@ -53,6 +53,9 @@ Awesome [Restic](https://restic.net) related projects.
 * [brudi](https://github.com/mittwald/brudi) - Easy, incremental and encrypted backup creation / restoration for different backends
 * [volsync](https://github.com/backube/volsync) - Asynchronous data replication for Kubernetes volumes
 * [rclone serve restic](https://rclone.org/commands/rclone_serve_restic/) - Serve the remote for restic's REST backend API locally and allows restic to use rclone as a data storage mechanism for cloud providers that restic does not support directly (e.g. WebDAV)
+* [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) -  Ansible role to deploy and configure restic.
+* [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
+* [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) -  Ansible role to deploy restic's Rest Server in a Docker container.
 
 ## Commercial
 
