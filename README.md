@@ -17,6 +17,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
 * [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
 * [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
+* [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 
 ## Mobile
 
