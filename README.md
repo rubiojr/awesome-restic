@@ -38,6 +38,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
 * [restic2influx](https://github.com/hn/restic2influx) - Parse Restic status output and feed summary to influx db
 * [restic-wrapper](https://github.com/peterrus/restic-wrapper) - Simple bash wrapper to source .env configuration files for Restic (and optionally rclone).
+* [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
 * [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
 * [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
