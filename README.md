@@ -22,6 +22,7 @@ Awesome [Restic](https://restic.net) related projects.
 ## Mobile
 
 * [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
+* [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
 ## Wrappers
 
