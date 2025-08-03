@@ -12,6 +12,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository
 * [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning
 * [Restic Browser](https://github.com/emuell/restic-browser) - A clientside GUI (Win/Linux/Mac) to browser your Restic repository snapshots
+* [Déjà Dup Backups](https://gitlab.gnome.org/World/deja-dup) - A simple GUI for restic, well-integrated into your GNOME desktop
 * [NPBackup](https://github.com/netinvent/npbackup) - A GUI & CLI backup program that adds Prometheus support, VSS fallback, cloud files excludes, etc... For Windows and Linux, and arm based NAS devices
 * [Restic Backup GX](https://gitlab.com/stormking/resticguigx/-/blob/master/README.md) - Easy to use desktop GUI with profiles
 * [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
