@@ -23,6 +23,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 ## Mobile
 
+* [Restoid](https://github.com/hddq/restoid) - A modern, root-based tool for backing up apps and their data on Android, powered by restic
 * [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
 * [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
