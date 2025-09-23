@@ -20,6 +20,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 * [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 * [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
+* [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
 
 ## Mobile
 
