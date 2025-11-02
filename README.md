@@ -68,3 +68,4 @@ Awesome [Restic](https://restic.net) related projects.
 
 * [Relica Backup](https://relicabackup.com)
 * [BorgBase](https://www.borgbase.com)
+* [Zmanda](https://zmanda.com/restic)
