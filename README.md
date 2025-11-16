@@ -21,6 +21,7 @@ Awesome [Restic](https://restic.net) related projects.
 * [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 * [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
 * [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
+* [Ironmount](https://github.com/nicotsx/ironmount) - A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends.
 
 ## Mobile
 
