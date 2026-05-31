@@ -99,6 +99,7 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     name = "Resticopia"
     url = "https://resticopia.dydlak.cloud/"
     description = "Powerful data backups powered by Restic, running natively on your Android device"
+    upstream_repo = "https://github.com/dawiddyd/resticopia"
 
   [[sections.items]]
     name = "Restique iOS App"

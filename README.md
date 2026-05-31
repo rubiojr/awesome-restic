@@ -30,7 +30,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 * 🟢 [Restoid](https://github.com/hddq/restoid) - A modern, root-based tool for backing up apps and their data on Android, powered by restic
 * 🟡 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
-* ⚪ [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
+* 🟢 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
 * ⚪ [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
 ## Wrappers
