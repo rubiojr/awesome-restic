@@ -57,11 +57,12 @@ func TestRenderNoArchive(t *testing.T) {
 func TestRenderSanitizesUntrustedFields(t *testing.T) {
 	c := &catalog.Catalog{Title: "T", Sections: []catalog.Section{{Name: "Apps"}}}
 	resolved := []curate.Resolved{
-		// Markdown/HTML metacharacters and a newline in name + description.
+		// A newline must not break the entry out of its single list item;
+		// authored Markdown (backticks, links) is preserved as-is.
 		{Section: "Apps", Item: catalog.Item{
-			Name:        "Evil] (x) <b>",
+			Name:        "Tool",
 			URL:         "https://github.com/a/b",
-			Description: "line1\nline2 <img src=x>",
+			Description: "uses `config.ini` and a [link](https://x.test)\n## injected heading",
 		}, State: curate.StateActive, Freshness: curate.FreshGreen},
 		// Dangerous URL scheme must not become a link destination.
 		{Section: "Apps", Item: catalog.Item{
@@ -78,10 +79,11 @@ func TestRenderSanitizesUntrustedFields(t *testing.T) {
 
 	out := Render(c, resolved)
 
-	// Name brackets/angles escaped; no raw newline injected into the list.
-	assert.Contains(t, out, `Evil\] (x) &lt;b&gt;`)
-	assert.NotContains(t, out, "line1\nline2")
-	assert.Contains(t, out, "line1 line2 &lt;img src=x&gt;")
+	// Authored Markdown is preserved.
+	assert.Contains(t, out, "uses `config.ini` and a [link](https://x.test)")
+	// The newline is collapsed, so the injected heading stays on the same line.
+	assert.NotContains(t, out, "\n## injected heading")
+	assert.Contains(t, out, "[link](https://x.test) ## injected heading")
 	// javascript: URL is dropped; the entry renders as plain text, no link.
 	assert.NotContains(t, out, "javascript:")
 	assert.Contains(t, out, "* 🟢 JS\n")

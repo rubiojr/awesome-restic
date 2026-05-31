@@ -113,35 +113,24 @@ func link(r curate.Resolved) string {
 	return s
 }
 
-// mdTextEscaper neutralises the inline-Markdown and HTML metacharacters that
-// could let a catalog field break out of its list item or inject markup.
-var mdTextEscaper = strings.NewReplacer(
-	`\`, `\\`,
-	"`", "\\`",
-	"[", `\[`,
-	"]", `\]`,
-	"<", "&lt;",
-	">", "&gt;",
-	"\r\n", " ",
-	"\n", " ",
-	"\r", " ",
-	"\t", " ",
-)
-
-// mdText sanitises an untrusted string for safe inclusion in Markdown: control
-// characters are stripped and structural metacharacters are escaped, so a
-// crafted name or description cannot inject new lines, links or HTML.
+// mdText sanitises an untrusted string for inclusion in a single Markdown list
+// item. Names and descriptions are authored Markdown (inline code, links,
+// emphasis), so that formatting is deliberately preserved; only control
+// characters and line breaks are neutralised. Stripping line breaks is the
+// meaningful defence: it stops a crafted field from breaking out of its list
+// item into new lines, headings or code fences. (GitHub's renderer already
+// sanitises raw HTML.)
 func mdText(s string) string {
-	s = strings.Map(func(r rune) rune {
-		if r == '\n' || r == '\r' || r == '\t' {
-			return r // handled by the replacer below
+	return strings.Map(func(r rune) rune {
+		switch r {
+		case '\n', '\r', '\t', '\v', '\f':
+			return ' '
 		}
 		if r < 0x20 || r == 0x7f {
 			return -1 // drop other control characters
 		}
 		return r
 	}, s)
-	return mdTextEscaper.Replace(s)
 }
 
 // safeURL validates an untrusted URL for use as a Markdown link destination.
