@@ -71,7 +71,7 @@ These projects are archived upstream or have seen no activity for over two years
 
 * 🔴 [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup _(Apps · last activity 2020-12-06)_
 * ⚪ [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository _(Apps · archived)_
-* 🔴 [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · last activity 2022-04-27)_
+* ⚪ [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · archived)_
 * ⚪ [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic _(Wrappers · archived)_
 * 🔴 [restique](https://github.com/maxkueng/restique) - A wrapper around restic with profiles _(Wrappers · last activity 2021-02-21)_
 * 🔴 [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic _(Wrappers · last activity 2023-03-28)_
