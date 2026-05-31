@@ -1,0 +1,265 @@
+title = "Awesome Restic"
+intro = "Awesome [Restic](https://restic.net) related projects."
+
+[[sections]]
+  name = "Compatible implementations"
+
+  [[sections.items]]
+    name = "Rustic"
+    url = "https://github.com/rustic-rs/rustic"
+    description = "A restic-compatible backup tool written in pure Rust"
+
+[[sections]]
+  name = "Apps"
+
+  [[sections.items]]
+    name = "Restatic"
+    url = "https://github.com/Mebus/restatic"
+    description = "A Boring Open Source GUI for Restic Backup"
+
+  [[sections.items]]
+    name = "RPlay"
+    url = "https://github.com/rubiojr/rplay"
+    description = "Command line audio player for your Restic repository"
+
+  [[sections.items]]
+    name = "Swamp"
+    url = "https://github.com/swampapp/swamp"
+    description = "Navigate your backed up data without drowning"
+
+  [[sections.items]]
+    name = "Restic Browser"
+    url = "https://github.com/emuell/restic-browser"
+    description = "A clientside GUI (Win/Linux/Mac) to browser your Restic repository snapshots"
+
+  [[sections.items]]
+    name = "Déjà Dup Backups"
+    url = "https://gitlab.gnome.org/World/deja-dup"
+    description = "A simple GUI for restic, well-integrated into your GNOME desktop"
+
+  [[sections.items]]
+    name = "NPBackup"
+    url = "https://github.com/netinvent/npbackup"
+    description = "A GUI & CLI backup program that adds Prometheus support, VSS fallback, cloud files excludes, etc... For Windows and Linux, and arm based NAS devices"
+
+  [[sections.items]]
+    name = "Restic Backup GX"
+    url = "https://gitlab.com/stormking/resticguigx/-/blob/master/README.md"
+    description = "Easy to use desktop GUI with profiles"
+
+  [[sections.items]]
+    name = "resticterm"
+    url = "https://github.com/GPh83/resticterm"
+    description = "a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository"
+
+  [[sections.items]]
+    name = "backrest"
+    url = "https://github.com/garethgeorge/backrest"
+    description = "Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots."
+
+  [[sections.items]]
+    name = "Kubackup"
+    url = "https://github.com/kubackup/kubackup"
+    description = "A Simple, Open-Source, and Modern Web UI for Restic."
+
+  [[sections.items]]
+    name = "Restic Scheduler"
+    url = "https://github.com/sergeymakinen/ResticScheduler"
+    description = "A Mac menu bar app to perform scheduled backups using Restic"
+
+  [[sections.items]]
+    name = "RestLite"
+    url = "https://github.com/rest-lite/RestLite"
+    description = "A simple backup program for Windows platform, supporting browsing snapshots by file directory"
+
+  [[sections.items]]
+    name = "redu"
+    url = "https://github.com/drdo/redu/"
+    description = "A disk usage analyzer like ncdu but for your restic repository"
+
+  [[sections.items]]
+    name = "Zerobyte"
+    url = "https://github.com/nicotsx/zerobyte"
+    description = "A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends."
+
+[[sections]]
+  name = "Mobile"
+
+  [[sections.items]]
+    name = "Restoid"
+    url = "https://github.com/hddq/restoid"
+    description = "A modern, root-based tool for backing up apps and their data on Android, powered by restic"
+
+  [[sections.items]]
+    name = "restic-android"
+    url = "https://github.com/lhns/restic-android"
+    description = "Restic Backup Android App (Unofficial)"
+
+  [[sections.items]]
+    name = "Resticopia"
+    url = "https://resticopia.dydlak.cloud/"
+    description = "Powerful data backups powered by Restic, running natively on your Android device"
+
+  [[sections.items]]
+    name = "Restique iOS App"
+    url = "https://apps.apple.com/app/restique/id6744624567"
+    description = "Securely access your Restic backup — anywhere, anytime on iOS!"
+
+[[sections]]
+  name = "Wrappers"
+
+  [[sections.items]]
+    name = "autorestic"
+    url = "https://github.com/cupcakearmy/autorestic"
+    description = "High level CLI utility for restic"
+
+  [[sections.items]]
+    name = "crestic"
+    url = "https://github.com/nils-werner/crestic"
+    description = "Configurable restic wrapper with support for profiles and environments"
+
+  [[sections.items]]
+    name = "resticprofile"
+    url = "https://github.com/creativeprojects/resticprofile"
+    description = "Configuration profiles for restic backup"
+
+  [[sections.items]]
+    name = "restic-PyBM"
+    url = "https://github.com/sephiroth1395/restic-PyBM"
+    description = "A Python 3 wrapper to manage and monitor backups with restic"
+
+  [[sections.items]]
+    name = "restique"
+    url = "https://github.com/maxkueng/restique"
+    description = "A wrapper around restic with profiles"
+
+  [[sections.items]]
+    name = "runrestic"
+    url = "https://github.com/sinnwerkstatt/runrestic"
+    description = "A wrapper script for Restic backup software that inits, creates, prunes and checks backups"
+
+  [[sections.items]]
+    name = "prestic"
+    url = "https://github.com/ducalex/prestic"
+    description = "Prestic is a profile manager and task scheduler for restic"
+
+  [[sections.items]]
+    name = "resticara"
+    url = "https://github.com/VuteTech/Resticara"
+    description = "Simple wrapper with a `.ini` configuration and mail notifications"
+
+  [[sections.items]]
+    name = "resticker"
+    url = "https://github.com/djmaze/resticker"
+    description = "Run automatic restic backups via a Docker container"
+
+  [[sections.items]]
+    name = "restic-robot"
+    url = "https://github.com/Southclaws/restic-robot"
+    description = "Scheduled restic backups, pre/post hooks, logs and Prometheus metrics"
+
+  [[sections.items]]
+    name = "restic-windows-backup"
+    url = "https://github.com/kmwoley/restic-windows-backup"
+    description = "Powershell scripts to run Restic backups on Windows"
+
+  [[sections.items]]
+    name = "restic2influx"
+    url = "https://github.com/hn/restic2influx"
+    description = "Parse Restic status output and feed summary to influx db"
+
+  [[sections.items]]
+    name = "restic-wrapper"
+    url = "https://github.com/peterrus/restic-wrapper"
+    description = "Simple bash wrapper to source .env configuration files for Restic (and optionally rclone)."
+
+  [[sections.items]]
+    name = "stack-back"
+    url = "https://github.com/lawndoc/stack-back"
+    description = "Backup tool for Docker Compose stacks that backs up container volumes with simple container labels"
+
+  [[sections.items]]
+    name = "Ludusavi Restic Playnite Plugin"
+    url = "https://github.com/sharkusmanch/playnite-ludusavi-restic"
+    description = "Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data."
+
+  [[sections.items]]
+    name = "restic-automatic-backup-scheduler"
+    url = "https://github.com/erikw/restic-automatic-backup-scheduler"
+    description = "Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron"
+
+  [[sections.items]]
+    name = "wrestic"
+    url = "https://github.com/alvaro17f/wrestic"
+    description = "👽 A wrapper around restic built in rust"
+
+[[sections]]
+  name = "Documentation"
+
+  [[sections.items]]
+    name = "RAPI"
+    url = "https://github.com/rubiojr/rapi"
+    description = "Tools, guide and code examples to learn Restic's internals"
+
+[[sections]]
+  name = "Other"
+
+  [[sections.items]]
+    name = "BIVAC"
+    url = "https://github.com/camptocamp/bivac"
+    description = "Backup Interface for Volumes Attached to Containers"
+
+  [[sections.items]]
+    name = "Stash"
+    url = "https://github.com/stashed/stash"
+    description = "Backup your Kubernetes Stateful Applications"
+
+  [[sections.items]]
+    name = "k8up"
+    url = "https://github.com/vshn/k8up"
+    description = "Kubernetes and OpenShift Backup Operator"
+
+  [[sections.items]]
+    name = "brudi"
+    url = "https://github.com/mittwald/brudi"
+    description = "Easy, incremental and encrypted backup creation / restoration for different backends"
+
+  [[sections.items]]
+    name = "volsync"
+    url = "https://github.com/backube/volsync"
+    description = "Asynchronous data replication for Kubernetes volumes"
+
+  [[sections.items]]
+    name = "rclone serve restic"
+    url = "https://rclone.org/commands/rclone_serve_restic/"
+    description = "Serve the remote for restic's REST backend API locally and allows restic to use rclone as a data storage mechanism for cloud providers that restic does not support directly (e.g. WebDAV)"
+
+  [[sections.items]]
+    name = "ansible_role_restic"
+    url = "https://github.com/roles-ansible/ansible_role_restic"
+    description = "Ansible role to deploy and configure restic."
+
+  [[sections.items]]
+    name = "ansible-role-autorestic"
+    url = "https://github.com/FuzzyMistborn/ansible-role-autorestic"
+    description = "An Ansible role which installs/updates restic and autorestic and creates autorestic config files."
+
+  [[sections.items]]
+    name = "ansible-role-restic-rest-server"
+    url = "https://github.com/tigattack/ansible-role-restic-rest-server"
+    description = "Ansible role to deploy restic's Rest Server in a Docker container."
+
+[[sections]]
+  name = "Commercial"
+
+  [[sections.items]]
+    name = "Relica Backup"
+    url = "https://relicabackup.com"
+
+  [[sections.items]]
+    name = "BorgBase"
+    url = "https://www.borgbase.com"
+
+  [[sections.items]]
+    name = "Zmanda"
+    url = "https://zmanda.com/restic"
