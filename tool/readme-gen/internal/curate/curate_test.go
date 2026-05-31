@@ -93,6 +93,28 @@ func TestResolveFallsBackToCacheOnFailure(t *testing.T) {
 	assert.Equal(t, StateActive, res[0].State)
 }
 
+func TestResolveUsesUpstreamRepo(t *testing.T) {
+	// Cache is keyed by the upstream repo URL, not the displayed URL.
+	cache := &Cache{Entries: map[string]CacheEntry{}}
+	good := checker.Status{Known: true, LastActivity: refNow.AddDate(0, -1, 0), Source: "github"}
+	cache.Put("https://github.com/org/real-repo", good, refNow)
+
+	r := &Resolver{Cache: cache}
+	c := &catalog.Catalog{Sections: []catalog.Section{{
+		Name: "Apps",
+		Items: []catalog.Item{{
+			Name:         "Tool",
+			URL:          "https://example.com/tool",
+			UpstreamRepo: "https://github.com/org/real-repo",
+		}},
+	}}}
+
+	res := r.Resolve(context.Background(), c, Options{Now: refNow, Offline: true})
+	require.Len(t, res, 1)
+	assert.True(t, res[0].Status.Known)
+	assert.Equal(t, FreshGreen, res[0].Freshness)
+}
+
 func TestCacheRoundTrip(t *testing.T) {
 	dir := t.TempDir()
 	path := dir + "/cache.json"

@@ -28,6 +28,12 @@ type Item struct {
 	URL         string `toml:"url"`
 	Description string `toml:"description,omitempty"`
 
+	// UpstreamRepo, when set, is the repository URL used for activity and
+	// archival checks instead of URL. Useful when the displayed link points
+	// somewhere other than the source repo (e.g. a website, a docs page, or a
+	// tool that lives in a larger monorepo).
+	UpstreamRepo string `toml:"upstream_repo,omitempty"`
+
 	// Optional manual overrides, mainly for non-repo entries (websites, app
 	// stores) or to pin a status regardless of API results.
 	//
@@ -37,6 +43,15 @@ type Item struct {
 	Updated string `toml:"updated,omitempty"`
 	// SkipCheck disables any API lookup for this item.
 	SkipCheck bool `toml:"skip_check,omitempty"`
+}
+
+// CheckURL is the URL used for activity/archival checks: UpstreamRepo when set,
+// otherwise the displayed URL.
+func (i Item) CheckURL() string {
+	if i.UpstreamRepo != "" {
+		return i.UpstreamRepo
+	}
+	return i.URL
 }
 
 // Load reads and parses a catalog from a TOML file.

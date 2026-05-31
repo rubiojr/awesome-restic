@@ -24,10 +24,16 @@ Mainly useful for non-repository links (websites, app stores) that can't be
 checked automatically:
 
 ```toml
+upstream_repo = "https://github.com/org/repo"  # check this repo instead of url
 archived = true          # force the archived flag
 updated = "2025-04-01"   # manual "last activity" date (YYYY-MM-DD)
 skip_check = true        # never query an API for this entry
 ```
+
+Use `upstream_repo` when the displayed `url` points somewhere other than the
+source repository — for example a project website, a docs page, or a tool that
+lives inside a larger monorepo. The freshness dot and archival status are then
+derived from `upstream_repo`, while the link still shows `url`.
 
 ## How curation works
 

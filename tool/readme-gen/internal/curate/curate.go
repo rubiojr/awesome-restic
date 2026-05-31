@@ -107,18 +107,19 @@ func (r *Resolver) Resolve(ctx context.Context, c *catalog.Catalog, opts Options
 // status determines the effective status of an item, applying manual overrides
 // and falling back to cache when a live check fails.
 func (r *Resolver) status(ctx context.Context, item catalog.Item, opts Options) checker.Status {
-	_, isRepo := checker.ParseRepo(item.URL)
+	checkURL := item.CheckURL()
+	_, isRepo := checker.ParseRepo(checkURL)
 
 	var st checker.Status
 	if !item.SkipCheck && isRepo {
 		if !opts.Offline && r.Client != nil {
-			st = r.Client.Check(ctx, item.URL)
+			st = r.Client.Check(ctx, checkURL)
 			if st.Known && r.Cache != nil {
-				r.Cache.Put(item.URL, st, opts.Now)
+				r.Cache.Put(checkURL, st, opts.Now)
 			}
 		}
 		if !st.Known && r.Cache != nil {
-			if e, ok := r.Cache.Get(item.URL); ok {
+			if e, ok := r.Cache.Get(checkURL); ok {
 				st = e.Status
 				st.Source = "cache"
 			}

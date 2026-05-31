@@ -96,7 +96,7 @@ func guardFailRate(resolved []curate.Resolved, offline bool, max float64) error 
 	}
 	var repos, failed int
 	for _, r := range resolved {
-		if _, ok := checker.ParseRepo(r.Item.URL); !ok || r.Item.SkipCheck {
+		if _, ok := checker.ParseRepo(r.Item.CheckURL()); !ok || r.Item.SkipCheck {
 			continue
 		}
 		repos++
