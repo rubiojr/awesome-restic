@@ -40,7 +40,7 @@ func TestRender(t *testing.T) {
 	assert.NotContains(t, out, "[Old](u3) - d3\n## ")
 	assert.Contains(t, out, "## Archived / Inactive")
 	assert.Contains(t, out, "* 🔴 [Old](u3) - d3 _(Apps · last activity 2021-03-04)_")
-	assert.Contains(t, out, "* ⚪ [Gone](u4) _(Wrappers · archived)_")
+	assert.Contains(t, out, "* 📦 [Gone](u4) _(Wrappers · archived)_")
 	// Wrappers had only an archived item, so its heading is omitted.
 	assert.NotContains(t, out, "## Wrappers")
 }

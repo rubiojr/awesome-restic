@@ -4,7 +4,7 @@
 
 Awesome [Restic](https://restic.net) related projects.
 
-> Freshness reflects the latest repository activity: 🟢 < 2 months · 🟡 < 4 months · 🟠 < 8 months · 🔴 older · ⚪ unknown.
+> Freshness reflects the latest repository activity: 🟢 < 2 months · 🟡 < 4 months · 🟠 < 8 months · 🔴 older · ⚪ unknown · 📦 archived upstream.
 > Projects archived upstream or inactive for over two years are listed under **Archived / Inactive** at the bottom.
 > This list is generated automatically; to add or update an entry see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
@@ -70,12 +70,12 @@ Awesome [Restic](https://restic.net) related projects.
 These projects are archived upstream or have seen no activity for over two years.
 
 * 🔴 [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup _(Apps · last activity 2020-12-06)_
-* ⚪ [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository _(Apps · archived)_
-* ⚪ [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · archived)_
-* ⚪ [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic _(Wrappers · archived)_
+* 📦 [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository _(Apps · archived)_
+* 📦 [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · archived)_
+* 📦 [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic _(Wrappers · archived)_
 * 🔴 [restique](https://github.com/maxkueng/restique) - A wrapper around restic with profiles _(Wrappers · last activity 2021-02-21)_
 * 🔴 [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic _(Wrappers · last activity 2023-03-28)_
 * 🔴 [restic-robot](https://github.com/Southclaws/restic-robot) - Scheduled restic backups, pre/post hooks, logs and Prometheus metrics _(Wrappers · last activity 2024-04-29)_
 * 🔴 [restic2influx](https://github.com/hn/restic2influx) - Parse Restic status output and feed summary to influx db _(Wrappers · last activity 2022-12-04)_
 * 🔴 [restic-wrapper](https://github.com/peterrus/restic-wrapper) - Simple bash wrapper to source .env configuration files for Restic (and optionally rclone). _(Wrappers · last activity 2022-08-21)_
-* ⚪ [RAPI](https://github.com/rubiojr/rapi) - Tools, guide and code examples to learn Restic's internals _(Documentation · archived)_
+* 📦 [RAPI](https://github.com/rubiojr/rapi) - Tools, guide and code examples to learn Restic's internals _(Documentation · archived)_

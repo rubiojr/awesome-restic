@@ -13,14 +13,25 @@ import (
 const (
 	// ArchiveSection is the heading for moved items.
 	ArchiveSection = "Archived / Inactive"
+	// ArchivedIcon marks entries archived upstream.
+	ArchivedIcon = "📦"
 
 	header = "<!-- This file is generated from data.toml. Do not edit README.md directly. -->"
 
 	policyNote = "> Freshness reflects the latest repository activity: " +
-		"🟢 < 2 months · 🟡 < 4 months · 🟠 < 8 months · 🔴 older · ⚪ unknown.\n" +
+		"🟢 < 2 months · 🟡 < 4 months · 🟠 < 8 months · 🔴 older · ⚪ unknown · " + ArchivedIcon + " archived upstream.\n" +
 		"> Projects archived upstream or inactive for over two years are listed under **" + ArchiveSection + "** at the bottom.\n" +
 		"> This list is generated automatically; to add or update an entry see [CONTRIBUTORS.md](CONTRIBUTORS.md)."
 )
+
+// lineIcon is the leading marker for an entry: a dedicated icon when archived
+// upstream, otherwise the freshness dot.
+func lineIcon(r curate.Resolved) string {
+	if r.Status.Known && r.Status.Archived {
+		return ArchivedIcon
+	}
+	return freshnessIcon(r.Freshness)
+}
 
 // freshnessIcon maps a freshness level to its emoji.
 func freshnessIcon(f curate.Freshness) string {
@@ -86,7 +97,7 @@ func Render(c *catalog.Catalog, resolved []curate.Resolved) string {
 }
 
 func link(r curate.Resolved) string {
-	s := fmt.Sprintf("* %s [%s](%s)", freshnessIcon(r.Freshness), r.Item.Name, r.Item.URL)
+	s := fmt.Sprintf("* %s [%s](%s)", lineIcon(r), r.Item.Name, r.Item.URL)
 	if r.Item.Description != "" {
 		s += " - " + r.Item.Description
 	}

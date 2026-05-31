@@ -171,11 +171,9 @@ func classify(st checker.Status, opts Options) State {
 	return StateActive
 }
 
-// freshness maps the last activity date onto the colour scale. Repositories
-// archived upstream report unknown freshness, since recent pre-archival pushes
-// would otherwise be a misleading "maintained" signal.
+// freshness maps the last activity date onto the colour scale.
 func freshness(st checker.Status, opts Options) Freshness {
-	if !st.Known || st.Archived || st.LastActivity.IsZero() {
+	if !st.Known || st.LastActivity.IsZero() {
 		return FreshUnknown
 	}
 	now := opts.Now

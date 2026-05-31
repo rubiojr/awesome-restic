@@ -45,7 +45,7 @@ func TestFreshness(t *testing.T) {
 	}{
 		{"unknown when not known", checker.Status{Known: false}, FreshUnknown},
 		{"unknown when no date", checker.Status{Known: true}, FreshUnknown},
-		{"unknown when archived upstream", checker.Status{Known: true, Archived: true, LastActivity: refNow}, FreshUnknown},
+		{"archived upstream uses activity date", checker.Status{Known: true, Archived: true, LastActivity: refNow.AddDate(0, -1, 0)}, FreshGreen},
 		{"green within 2mo", checker.Status{Known: true, LastActivity: refNow.AddDate(0, -1, 0)}, FreshGreen},
 		{"yellow within 4mo", checker.Status{Known: true, LastActivity: refNow.AddDate(0, -3, 0)}, FreshYellow},
 		{"orange within 8mo", checker.Status{Known: true, LastActivity: refNow.AddDate(0, -6, 0)}, FreshOrange},

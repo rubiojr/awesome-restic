@@ -71,7 +71,7 @@ func run() error {
 	}
 
 	out := render.Render(cat, resolved)
-	printReport(resolved)
+	printReport(resolved, *offline)
 
 	if *dryRun {
 		fmt.Print(out)
@@ -125,7 +125,7 @@ func checkUpToDate(path, want string) error {
 	return nil
 }
 
-func printReport(resolved []curate.Resolved) {
+func printReport(resolved []curate.Resolved, offline bool) {
 	var counts [5]int
 	var archived []curate.Resolved
 	for _, r := range resolved {
@@ -149,4 +149,54 @@ func printReport(resolved []curate.Resolved) {
 		}
 		fmt.Fprintf(os.Stderr, "  📦 %s (%s, %s)\n", r.Item.Name, reason, r.Status.Source)
 	}
+
+	printUnresolvedWarnings(resolved, offline)
+}
+
+// printUnresolvedWarnings flags entries that point at a checkable repository but
+// could not be resolved, so a silent ⚪ on a repo-backed entry is never missed.
+func printUnresolvedWarnings(resolved []curate.Resolved, offline bool) {
+	warns := unresolvedRepoEntries(resolved)
+	if len(warns) == 0 {
+		return
+	}
+
+	fmt.Fprintf(os.Stderr, "Warning: %d repo entr%s could not be checked and show as ⚪ unknown:\n",
+		len(warns), plural(len(warns), "y", "ies"))
+	for _, r := range warns {
+		reason := "no data"
+		switch {
+		case r.Status.Err != "":
+			reason = r.Status.Err
+		case offline:
+			reason = "offline and not in cache"
+		}
+		fmt.Fprintf(os.Stderr, "  ⚠️  %s (%s) — %s\n", r.Item.Name, r.Item.CheckURL(), reason)
+	}
+}
+
+// unresolvedRepoEntries returns entries whose check URL is a recognised
+// repository but whose status could not be determined.
+func unresolvedRepoEntries(resolved []curate.Resolved) []curate.Resolved {
+	var warns []curate.Resolved
+	for _, r := range resolved {
+		if r.Item.SkipCheck {
+			continue
+		}
+		if _, ok := checker.ParseRepo(r.Item.CheckURL()); !ok {
+			continue // genuinely a non-repo link; ⚪ is expected
+		}
+		if !r.Status.Known {
+			warns = append(warns, r)
+		}
+	}
+	sort.SliceStable(warns, func(i, j int) bool { return warns[i].Item.Name < warns[j].Item.Name })
+	return warns
+}
+
+func plural(n int, one, many string) string {
+	if n == 1 {
+		return one
+	}
+	return many
 }
