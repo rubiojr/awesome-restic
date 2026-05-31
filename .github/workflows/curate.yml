@@ -1,0 +1,48 @@
+name: Curate README
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache-dependency-path: tool/readme-gen/go.sum
+
+      - name: Run tests
+        working-directory: tool/readme-gen
+        run: go test ./...
+
+      - name: Generate README
+        working-directory: tool/readme-gen
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: go run .
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh curated README"
+          title: "Refresh curated README"
+          body: |
+            Automated curation update generated from `data.toml`.
+
+            Activity and archival status are checked via the GitHub and GitLab
+            APIs. Review the diff before merging.
+          branch: automated/curate-readme
+          delete-branch: true
+          add-paths: |
+            README.md
+            tool/readme-gen/.cache/status.json
