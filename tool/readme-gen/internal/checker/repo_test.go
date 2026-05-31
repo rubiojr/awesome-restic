@@ -30,6 +30,17 @@ func TestParseRepo(t *testing.T) {
 		{"plain website", "https://relicabackup.com", false, ProviderUnknown, "", ""},
 		{"rclone docs", "https://rclone.org/commands/rclone_serve_restic/", false, ProviderUnknown, "", ""},
 		{"empty", "", false, ProviderUnknown, "", ""},
+		// Security: dangerous schemes are rejected outright.
+		{"javascript scheme", "javascript:alert(1)//github.com/a/b", false, ProviderUnknown, "", ""},
+		{"file scheme", "file:///etc/passwd", false, ProviderUnknown, "", ""},
+		// Security: path traversal in owner/repo is rejected, not forwarded.
+		{"github dotdot owner", "https://github.com/../../search", false, ProviderUnknown, "", ""},
+		{"github dotdot repo", "https://github.com/foo/..", false, ProviderUnknown, "", ""},
+		// Security: look-alike GitLab hostnames are not treated as GitLab.
+		{"evil gitlab suffix", "https://evil-gitlab.com/a/b", false, ProviderUnknown, "", ""},
+		{"my gitlab", "https://mygitlab.com/a/b", false, ProviderUnknown, "", ""},
+		// Legitimate self-hosted GitLab (gitlab.* subdomain) still works.
+		{"gitlab subdomain host", "https://gitlab.example.org/group/project", true, ProviderGitLab, "gitlab.example.org", "group/project"},
 	}
 
 	for _, tt := range tests {

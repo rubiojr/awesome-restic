@@ -54,11 +54,17 @@ func (i Item) CheckURL() string {
 	return i.URL
 }
 
-// Load reads and parses a catalog from a TOML file.
-func Load(path string) (*Catalog, error) {
+// Load reads and parses a catalog from a TOML file located within root. The
+// name is resolved relative to root, which prevents traversal outside the
+// permitted directory tree.
+func Load(root *os.Root, name string) (*Catalog, error) {
+	b, err := root.ReadFile(name)
+	if err != nil {
+		return nil, fmt.Errorf("loading catalog %q: %w", name, err)
+	}
 	var c Catalog
-	if _, err := toml.DecodeFile(path, &c); err != nil {
-		return nil, fmt.Errorf("loading catalog %q: %w", path, err)
+	if err := toml.Unmarshal(b, &c); err != nil {
+		return nil, fmt.Errorf("parsing catalog %q: %w", name, err)
 	}
 	return &c, nil
 }

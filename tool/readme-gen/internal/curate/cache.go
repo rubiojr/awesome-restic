@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"path/filepath"
 	"time"
 
 	"github.com/rubiojr/awesome-restic/tool/readme-gen/internal/checker"
@@ -23,21 +24,23 @@ type Cache struct {
 	Entries map[string]CacheEntry `json:"entries"`
 }
 
-// LoadCache reads a cache file. A missing file yields an empty cache.
-func LoadCache(path string) (*Cache, error) {
+// LoadCache reads a cache file located within root, resolved relative to root
+// so it can never escape the permitted directory tree. An empty name disables
+// the cache; a missing file yields an empty cache.
+func LoadCache(root *os.Root, name string) (*Cache, error) {
 	c := &Cache{Entries: map[string]CacheEntry{}}
-	if path == "" {
+	if name == "" {
 		return c, nil
 	}
-	b, err := os.ReadFile(path)
+	b, err := root.ReadFile(name)
 	if errors.Is(err, os.ErrNotExist) {
 		return c, nil
 	}
 	if err != nil {
-		return nil, fmt.Errorf("reading cache %q: %w", path, err)
+		return nil, fmt.Errorf("reading cache %q: %w", name, err)
 	}
 	if err := json.Unmarshal(b, c); err != nil {
-		return nil, fmt.Errorf("parsing cache %q: %w", path, err)
+		return nil, fmt.Errorf("parsing cache %q: %w", name, err)
 	}
 	if c.Entries == nil {
 		c.Entries = map[string]CacheEntry{}
@@ -45,9 +48,10 @@ func LoadCache(path string) (*Cache, error) {
 	return c, nil
 }
 
-// Save writes the cache to a file with stable, indented JSON.
-func (c *Cache) Save(path string) error {
-	if path == "" {
+// Save writes the cache within root with stable, indented JSON. The name is
+// resolved relative to root, confining writes to the permitted tree.
+func (c *Cache) Save(root *os.Root, name string) error {
+	if name == "" {
 		return nil
 	}
 	b, err := json.MarshalIndent(c, "", "  ")
@@ -55,8 +59,13 @@ func (c *Cache) Save(path string) error {
 		return err
 	}
 	b = append(b, '\n')
-	if err := os.WriteFile(path, b, 0o644); err != nil {
-		return fmt.Errorf("writing cache %q: %w", path, err)
+	if dir := filepath.Dir(name); dir != "." {
+		if err := root.MkdirAll(dir, 0o755); err != nil {
+			return fmt.Errorf("creating cache dir %q: %w", dir, err)
+		}
+	}
+	if err := root.WriteFile(name, b, 0o644); err != nil {
+		return fmt.Errorf("writing cache %q: %w", name, err)
 	}
 	return nil
 }

@@ -4,6 +4,7 @@ package render
 
 import (
 	"fmt"
+	"net/url"
 	"strings"
 
 	"github.com/rubiojr/awesome-restic/tool/readme-gen/internal/catalog"
@@ -97,11 +98,80 @@ func Render(c *catalog.Catalog, resolved []curate.Resolved) string {
 }
 
 func link(r curate.Resolved) string {
-	s := fmt.Sprintf("* %s [%s](%s)", lineIcon(r), r.Item.Name, r.Item.URL)
+	name := mdText(r.Item.Name)
+	var s string
+	if dest, ok := safeURL(r.Item.URL); ok {
+		s = fmt.Sprintf("* %s [%s](%s)", lineIcon(r), name, dest)
+	} else {
+		// Unsafe or empty URL: render the name as plain text rather than emit
+		// a link with an untrusted destination.
+		s = fmt.Sprintf("* %s %s", lineIcon(r), name)
+	}
 	if r.Item.Description != "" {
-		s += " - " + r.Item.Description
+		s += " - " + mdText(r.Item.Description)
 	}
 	return s
+}
+
+// mdTextEscaper neutralises the inline-Markdown and HTML metacharacters that
+// could let a catalog field break out of its list item or inject markup.
+var mdTextEscaper = strings.NewReplacer(
+	`\`, `\\`,
+	"`", "\\`",
+	"[", `\[`,
+	"]", `\]`,
+	"<", "&lt;",
+	">", "&gt;",
+	"\r\n", " ",
+	"\n", " ",
+	"\r", " ",
+	"\t", " ",
+)
+
+// mdText sanitises an untrusted string for safe inclusion in Markdown: control
+// characters are stripped and structural metacharacters are escaped, so a
+// crafted name or description cannot inject new lines, links or HTML.
+func mdText(s string) string {
+	s = strings.Map(func(r rune) rune {
+		if r == '\n' || r == '\r' || r == '\t' {
+			return r // handled by the replacer below
+		}
+		if r < 0x20 || r == 0x7f {
+			return -1 // drop other control characters
+		}
+		return r
+	}, s)
+	return mdTextEscaper.Replace(s)
+}
+
+// safeURL validates an untrusted URL for use as a Markdown link destination.
+// It rejects dangerous schemes (e.g. javascript:, data:) and percent-encodes
+// the few characters that would otherwise break the link syntax. The boolean
+// is false when no safe link can be produced.
+func safeURL(raw string) (string, bool) {
+	s := strings.Map(func(r rune) rune {
+		if r < 0x20 || r == 0x7f || r == ' ' {
+			return -1 // strip control characters and whitespace
+		}
+		return r
+	}, strings.TrimSpace(raw))
+	if s == "" {
+		return "", false
+	}
+	u, err := url.Parse(s)
+	if err != nil {
+		return "", false
+	}
+	if u.Scheme != "" {
+		switch strings.ToLower(u.Scheme) {
+		case "http", "https", "mailto":
+		default:
+			return "", false
+		}
+	}
+	// Keep the destination from terminating the Markdown link early.
+	s = strings.NewReplacer("(", "%28", ")", "%29").Replace(s)
+	return s, true
 }
 
 func activeLine(r curate.Resolved) string {

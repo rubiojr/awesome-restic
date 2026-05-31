@@ -2,6 +2,7 @@ package curate
 
 import (
 	"context"
+	"os"
 	"testing"
 	"time"
 
@@ -117,13 +118,15 @@ func TestResolveUsesUpstreamRepo(t *testing.T) {
 
 func TestCacheRoundTrip(t *testing.T) {
 	dir := t.TempDir()
-	path := dir + "/cache.json"
+	root, err := os.OpenRoot(dir)
+	require.NoError(t, err)
+	defer root.Close()
 
 	c := &Cache{Entries: map[string]CacheEntry{}}
 	c.Put("https://github.com/a/b", checker.Status{Known: true, Source: "github"}, refNow)
-	require.NoError(t, c.Save(path))
+	require.NoError(t, c.Save(root, "sub/cache.json"))
 
-	loaded, err := LoadCache(path)
+	loaded, err := LoadCache(root, "sub/cache.json")
 	require.NoError(t, err)
 	e, ok := loaded.Get("https://github.com/a/b")
 	require.True(t, ok)
@@ -131,7 +134,11 @@ func TestCacheRoundTrip(t *testing.T) {
 }
 
 func TestLoadCacheMissing(t *testing.T) {
-	c, err := LoadCache(t.TempDir() + "/nope.json")
+	root, err := os.OpenRoot(t.TempDir())
+	require.NoError(t, err)
+	defer root.Close()
+
+	c, err := LoadCache(root, "nope.json")
 	require.NoError(t, err)
 	assert.Empty(t, c.Entries)
 }

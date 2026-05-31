@@ -2,8 +2,23 @@ package checker
 
 import (
 	"net/url"
+	"regexp"
 	"strings"
 )
+
+// repoSegment is the set of characters allowed in a single path segment
+// (owner, repo or namespace component). Restricting this prevents an entry
+// from smuggling path traversal (e.g. "..") or other characters into the
+// upstream API request URL.
+var repoSegment = regexp.MustCompile(`^[A-Za-z0-9._-]+$`)
+
+// validSegment reports whether s is a safe single path segment.
+func validSegment(s string) bool {
+	if s == "" || s == "." || s == ".." {
+		return false
+	}
+	return repoSegment.MatchString(s)
+}
 
 // Provider identifies the hosting service for a repository URL.
 type Provider int
@@ -34,6 +49,14 @@ func ParseRepo(raw string) (RepoRef, bool) {
 		return RepoRef{}, false
 	}
 
+	// Only HTTP(S) URLs can be repository links; reject javascript:, file:,
+	// data: and any other scheme outright.
+	switch strings.ToLower(u.Scheme) {
+	case "http", "https":
+	default:
+		return RepoRef{}, false
+	}
+
 	host := strings.ToLower(u.Host)
 	path := strings.Trim(u.Path, "/")
 	if path == "" {
@@ -43,7 +66,7 @@ func ParseRepo(raw string) (RepoRef, bool) {
 	switch {
 	case host == "github.com" || host == "www.github.com":
 		return parseGitHub(path)
-	case host == "gitlab.com" || strings.Contains(host, "gitlab."):
+	case host == "gitlab.com" || strings.HasPrefix(host, "gitlab."):
 		return parseGitLab(host, path)
 	default:
 		return RepoRef{}, false
@@ -58,7 +81,7 @@ func parseGitHub(path string) (RepoRef, bool) {
 	}
 	owner := parts[0]
 	repo := strings.TrimSuffix(parts[1], ".git")
-	if owner == "" || repo == "" {
+	if !validSegment(owner) || !validSegment(repo) {
 		return RepoRef{}, false
 	}
 	return RepoRef{Provider: ProviderGitHub, Host: "github.com", Path: owner + "/" + repo}, true
@@ -74,6 +97,13 @@ func parseGitLab(host, path string) (RepoRef, bool) {
 	if !strings.Contains(path, "/") {
 		// A bare group with no project is not a repository.
 		return RepoRef{}, false
+	}
+	// Validate every namespace/project segment so nothing but a clean path is
+	// ever escaped into the upstream API URL.
+	for _, seg := range strings.Split(path, "/") {
+		if !validSegment(seg) {
+			return RepoRef{}, false
+		}
 	}
 	return RepoRef{Provider: ProviderGitLab, Host: host, Path: path}, true
 }

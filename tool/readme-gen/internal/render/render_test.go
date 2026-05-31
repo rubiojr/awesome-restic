@@ -53,3 +53,63 @@ func TestRenderNoArchive(t *testing.T) {
 	out := Render(c, resolved)
 	require.NotContains(t, out, "## Archived / Inactive")
 }
+
+func TestRenderSanitizesUntrustedFields(t *testing.T) {
+	c := &catalog.Catalog{Title: "T", Sections: []catalog.Section{{Name: "Apps"}}}
+	resolved := []curate.Resolved{
+		// Markdown/HTML metacharacters and a newline in name + description.
+		{Section: "Apps", Item: catalog.Item{
+			Name:        "Evil] (x) <b>",
+			URL:         "https://github.com/a/b",
+			Description: "line1\nline2 <img src=x>",
+		}, State: curate.StateActive, Freshness: curate.FreshGreen},
+		// Dangerous URL scheme must not become a link destination.
+		{Section: "Apps", Item: catalog.Item{
+			Name: "JS",
+			URL:  "javascript:alert(1)",
+		}, State: curate.StateActive, Freshness: curate.FreshGreen},
+		// Parentheses in an otherwise valid URL get encoded; stray
+		// whitespace is stripped.
+		{Section: "Apps", Item: catalog.Item{
+			Name: "Parens",
+			URL:  "https://example.com/a (b)",
+		}, State: curate.StateActive, Freshness: curate.FreshGreen},
+	}
+
+	out := Render(c, resolved)
+
+	// Name brackets/angles escaped; no raw newline injected into the list.
+	assert.Contains(t, out, `Evil\] (x) &lt;b&gt;`)
+	assert.NotContains(t, out, "line1\nline2")
+	assert.Contains(t, out, "line1 line2 &lt;img src=x&gt;")
+	// javascript: URL is dropped; the entry renders as plain text, no link.
+	assert.NotContains(t, out, "javascript:")
+	assert.Contains(t, out, "* 🟢 JS\n")
+	// Parens in the destination are percent-encoded (whitespace stripped).
+	assert.Contains(t, out, "https://example.com/a%28b%29")
+}
+
+func TestSafeURL(t *testing.T) {
+	cases := []struct {
+		in  string
+		out string
+		ok  bool
+	}{
+		{"https://github.com/a/b", "https://github.com/a/b", true},
+		{"http://x.test", "http://x.test", true},
+		{"mailto:a@b.test", "mailto:a@b.test", true},
+		{"u1", "u1", true}, // relative is allowed
+		{"javascript:alert(1)", "", false},
+		{"data:text/html,x", "", false},
+		{"file:///etc/passwd", "", false},
+		{"", "", false},
+		{"  ", "", false},
+	}
+	for _, tt := range cases {
+		got, ok := safeURL(tt.in)
+		assert.Equalf(t, tt.ok, ok, "ok for %q", tt.in)
+		if tt.ok {
+			assert.Equalf(t, tt.out, got, "out for %q", tt.in)
+		}
+	}
+}

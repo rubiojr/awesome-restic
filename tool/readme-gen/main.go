@@ -7,6 +7,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"path/filepath"
 	"sort"
 	"time"
 
@@ -25,9 +26,10 @@ func main() {
 
 func run() error {
 	var (
-		input       = flag.String("input", "../../data.toml", "path to the TOML source of truth")
-		output      = flag.String("output", "../../README.md", "path to the generated README")
-		cachePath   = flag.String("cache", ".cache/status.json", "path to the status cache (empty to disable)")
+		rootDir     = flag.String("root", "../..", "directory tree the tool may read and write within")
+		input       = flag.String("input", "data.toml", "path to the TOML source of truth, relative to -root")
+		output      = flag.String("output", "README.md", "path to the generated README, relative to -root")
+		cachePath   = flag.String("cache", "tool/readme-gen/.cache/status.json", "path to the status cache relative to -root (empty to disable)")
 		dryRun      = flag.Bool("dry-run", false, "print the README to stdout instead of writing it")
 		offline     = flag.Bool("offline", false, "skip live API calls and use cache/manual data only")
 		checkMode   = flag.Bool("check", false, "exit non-zero if the output file is out of date")
@@ -36,12 +38,20 @@ func run() error {
 	)
 	flag.Parse()
 
-	cat, err := catalog.Load(*input)
+	// All file access is confined to this root: os.Root refuses paths that
+	// escape the tree via "..", absolute paths or symlinks.
+	root, err := os.OpenRoot(*rootDir)
+	if err != nil {
+		return fmt.Errorf("opening root %q: %w", *rootDir, err)
+	}
+	defer root.Close()
+
+	cat, err := catalog.Load(root, *input)
 	if err != nil {
 		return err
 	}
 
-	cache, err := curate.LoadCache(*cachePath)
+	cache, err := curate.LoadCache(root, *cachePath)
 	if err != nil {
 		return err
 	}
@@ -65,7 +75,7 @@ func run() error {
 	}
 
 	if !*offline {
-		if err := cache.Save(*cachePath); err != nil {
+		if err := cache.Save(root, *cachePath); err != nil {
 			return err
 		}
 	}
@@ -79,13 +89,24 @@ func run() error {
 	}
 
 	if *checkMode {
-		return checkUpToDate(*output, out)
+		return checkUpToDate(root, *output, out)
 	}
 
-	if err := os.WriteFile(*output, []byte(out), 0o644); err != nil {
+	if err := writeFile(root, *output, []byte(out)); err != nil {
 		return fmt.Errorf("writing %q: %w", *output, err)
 	}
 	return nil
+}
+
+// writeFile writes data to name within root, creating parent directories as
+// needed, all confined to the root tree.
+func writeFile(root *os.Root, name string, data []byte) error {
+	if dir := filepath.Dir(name); dir != "." {
+		if err := root.MkdirAll(dir, 0o755); err != nil {
+			return err
+		}
+	}
+	return root.WriteFile(name, data, 0o644)
 }
 
 // guardFailRate aborts if too many repository checks failed without cache
@@ -114,13 +135,13 @@ func guardFailRate(resolved []curate.Resolved, offline bool, max float64) error 
 	return nil
 }
 
-func checkUpToDate(path, want string) error {
-	got, err := os.ReadFile(path)
+func checkUpToDate(root *os.Root, name, want string) error {
+	got, err := root.ReadFile(name)
 	if err != nil {
 		return err
 	}
 	if string(got) != want {
-		return fmt.Errorf("%s is out of date; run the generator and commit the result", path)
+		return fmt.Errorf("%s is out of date; run the generator and commit the result", name)
 	}
 	return nil
 }
