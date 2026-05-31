@@ -233,6 +233,7 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     name = "rclone serve restic"
     url = "https://rclone.org/commands/rclone_serve_restic/"
     description = "Serve the remote for restic's REST backend API locally and allows restic to use rclone as a data storage mechanism for cloud providers that restic does not support directly (e.g. WebDAV)"
+    upstream_repo = "https://github.com/rclone/rclone"
 
   [[sections.items]]
     name = "ansible_role_restic"
