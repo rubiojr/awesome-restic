@@ -25,6 +25,9 @@ Awesome [Restic](https://restic.net) related projects.
 * 🔴 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
 * 🟡 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
 * 🟢 [Zerobyte](https://github.com/nicotsx/zerobyte) - A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends.
+* 🟢 [httm](https://github.com/kimono-koans/httm) - Interactive, file-level Time Machine-like tool for ZFS/btrfs/nilfs2 and Restic backups
+* 🟢 [Pluton](https://github.com/plutonhq/pluton) - A modern, self-hosted backup solution for secure, encrypted backups across local and cloud storage
+* 🟢 [Arkeep](https://github.com/arkeep-io/arkeep) - Manage backups across all your servers from a single dashboard
 
 ## Mobile
 
@@ -47,6 +50,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟡 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
 * 🟠 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
+* 🟠 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
 
 ## Other
 
@@ -74,6 +78,7 @@ These projects are archived upstream or have seen no activity for over two years
 * 🔴 [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup _(Apps · last activity 2020-12-06)_
 * 📦 [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository _(Apps · archived)_
 * 📦 [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · archived)_
+* 🔴 [Resticity](https://github.com/ad-on-is/resticity) - A beautiful cross-platform UI for restic backup _(Apps · last activity 2024-04-05)_
 * 📦 [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic _(Wrappers · archived)_
 * 🔴 [restique](https://github.com/maxkueng/restique) - A wrapper around restic with profiles _(Wrappers · last activity 2021-02-21)_
 * 🔴 [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic _(Wrappers · last activity 2023-03-28)_

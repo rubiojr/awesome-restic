@@ -82,6 +82,26 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/nicotsx/zerobyte"
     description = "A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends."
 
+  [[sections.items]]
+    name = "httm"
+    url = "https://github.com/kimono-koans/httm"
+    description = "Interactive, file-level Time Machine-like tool for ZFS/btrfs/nilfs2 and Restic backups"
+
+  [[sections.items]]
+    name = "Pluton"
+    url = "https://github.com/plutonhq/pluton"
+    description = "A modern, self-hosted backup solution for secure, encrypted backups across local and cloud storage"
+
+  [[sections.items]]
+    name = "Resticity"
+    url = "https://github.com/ad-on-is/resticity"
+    description = "A beautiful cross-platform UI for restic backup"
+
+  [[sections.items]]
+    name = "Arkeep"
+    url = "https://github.com/arkeep-io/arkeep"
+    description = "Manage backups across all your servers from a single dashboard"
+
 [[sections]]
   name = "Mobile"
 
@@ -198,6 +218,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     name = "restic-backup-docker"
     url = "https://github.com/lobaro/restic-backup-docker"
     description = "A Docker container to automate restic backups"
+
+  [[sections.items]]
+    name = "Repliqate"
+    url = "https://github.com/lminlone/repliqate"
+    description = "A modular Docker container/volume backup solution"
 
 [[sections]]
   name = "Documentation"
