@@ -300,3 +300,15 @@ intro = "Awesome [Restic](https://restic.net) related projects."
   [[sections.items]]
     name = "Zmanda"
     url = "https://zmanda.com/restic"
+
+  [[sections.items]]
+    name = "BackUpScale"
+    url = "https://backupscale.com"
+
+  [[sections.items]]
+    name = "Storvex"
+    url = "https://storvex.es"
+
+  [[sections.items]]
+    name = "rsync.net"
+    url = "https://www.rsync.net/products/restic.html"

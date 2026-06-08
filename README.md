@@ -70,6 +70,9 @@ Awesome [Restic](https://restic.net) related projects.
 * ⚪ [Relica Backup](https://relicabackup.com)
 * ⚪ [BorgBase](https://www.borgbase.com)
 * ⚪ [Zmanda](https://zmanda.com/restic)
+* ⚪ [BackUpScale](https://backupscale.com)
+* ⚪ [Storvex](https://storvex.es)
+* ⚪ [rsync.net](https://www.rsync.net/products/restic.html)
 
 ## Archived / Inactive
 
