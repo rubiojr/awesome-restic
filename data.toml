@@ -194,6 +194,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/alvaro17f/wrestic"
     description = "👽 A wrapper around restic built in rust"
 
+  [[sections.items]]
+    name = "restic-backup-docker"
+    url = "https://github.com/lobaro/restic-backup-docker"
+    description = "A Docker container to automate restic backups"
+
 [[sections]]
   name = "Documentation"
 
@@ -250,6 +255,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     name = "ansible-role-restic-rest-server"
     url = "https://github.com/tigattack/ansible-role-restic-rest-server"
     description = "Ansible role to deploy restic's Rest Server in a Docker container."
+
+  [[sections.items]]
+    name = "restic-exporter"
+    url = "https://github.com/ngosang/restic-exporter"
+    description = "A Prometheus exporter for Restic backup metrics"
 
 [[sections]]
   name = "Commercial"

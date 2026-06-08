@@ -46,6 +46,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
 * 🟡 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
+* 🟠 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
 
 ## Other
 
@@ -58,6 +59,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟡 [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) - Ansible role to deploy and configure restic.
 * 🟡 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
 * 🟢 [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) - Ansible role to deploy restic's Rest Server in a Docker container.
+* 🟡 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
 
 ## Commercial
 
