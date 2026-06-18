@@ -18,16 +18,17 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [Déjà Dup Backups](https://gitlab.gnome.org/World/deja-dup) - A simple GUI for restic, well-integrated into your GNOME desktop
 * 🟢 [NPBackup](https://github.com/netinvent/npbackup) - A GUI & CLI backup program that adds Prometheus support, VSS fallback, cloud files excludes, etc... For Windows and Linux, and arm based NAS devices
 * 🟡 [Restic Backup GX](https://gitlab.com/stormking/resticguigx/-/blob/master/README.md) - Easy to use desktop GUI with profiles
-* 🟢 [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
+* 🟡 [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
 * 🟢 [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
 * 🟢 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 * 🟡 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 * 🔴 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
-* 🟡 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
+* 🟠 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
 * 🟢 [Zerobyte](https://github.com/nicotsx/zerobyte) - A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends.
 * 🟢 [httm](https://github.com/kimono-koans/httm) - Interactive, file-level Time Machine-like tool for ZFS/btrfs/nilfs2 and Restic backups
 * 🟢 [Pluton](https://github.com/plutonhq/pluton) - A modern, self-hosted backup solution for secure, encrypted backups across local and cloud storage
 * 🟢 [Arkeep](https://github.com/arkeep-io/arkeep) - Manage backups across all your servers from a single dashboard
+* 🟢 [Rest Stop](https://github.com/srivatsshankar/rest-stop) - Simple restic backups
 
 ## Mobile
 
