@@ -102,6 +102,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/arkeep-io/arkeep"
     description = "Manage backups across all your servers from a single dashboard"
 
+  [[sections.items]]
+    name = "Rest Stop"
+    url = "https://github.com/srivatsshankar/rest-stop"
+    description = "Simple restic backups"
+
 [[sections]]
   name = "Mobile"
 
