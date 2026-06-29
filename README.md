@@ -14,7 +14,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 ## Apps
 
-* 🟡 [Restic Browser](https://github.com/emuell/restic-browser) - A clientside GUI (Win/Linux/Mac) to browser your Restic repository snapshots
+* 🟢 [Restic Browser](https://github.com/emuell/restic-browser) - A clientside GUI (Win/Linux/Mac) to browser your Restic repository snapshots
 * 🟢 [Déjà Dup Backups](https://gitlab.gnome.org/World/deja-dup) - A simple GUI for restic, well-integrated into your GNOME desktop
 * 🟢 [NPBackup](https://github.com/netinvent/npbackup) - A GUI & CLI backup program that adds Prometheus support, VSS fallback, cloud files excludes, etc... For Windows and Linux, and arm based NAS devices
 * 🟡 [Restic Backup GX](https://gitlab.com/stormking/resticguigx/-/blob/master/README.md) - Easy to use desktop GUI with profiles
@@ -33,7 +33,7 @@ Awesome [Restic](https://restic.net) related projects.
 ## Mobile
 
 * 🟢 [Restoid](https://github.com/hddq/restoid) - A modern, root-based tool for backing up apps and their data on Android, powered by restic
-* 🟡 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
+* 🟠 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
 * 🟢 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
 * ⚪ [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
@@ -62,9 +62,9 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [volsync](https://github.com/backube/volsync) - Asynchronous data replication for Kubernetes volumes
 * 🟢 [rclone serve restic](https://rclone.org/commands/rclone_serve_restic/) - Serve the remote for restic's REST backend API locally and allows restic to use rclone as a data storage mechanism for cloud providers that restic does not support directly (e.g. WebDAV)
 * 🟢 [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) - Ansible role to deploy and configure restic.
-* 🟡 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
+* 🟠 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
 * 🟢 [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) - Ansible role to deploy restic's Rest Server in a Docker container.
-* 🟠 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
+* 🟢 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
 
 ## Commercial
 
