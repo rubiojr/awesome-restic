@@ -7,7 +7,7 @@
         "last_activity": "2026-02-22T20:10:29Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/GPh83/resticterm": {
       "status": {
@@ -16,7 +16,7 @@
         "last_activity": "2026-04-15T08:09:14Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/Mebus/restatic": {
       "status": {
@@ -25,7 +25,7 @@
         "last_activity": "2020-12-06T22:12:54Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/Southclaws/restic-robot": {
       "status": {
@@ -34,7 +34,7 @@
         "last_activity": "2024-04-29T12:02:21Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/VuteTech/Resticara": {
       "status": {
@@ -43,7 +43,7 @@
         "last_activity": "2025-09-02T17:21:43Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/ad-on-is/resticity": {
       "status": {
@@ -52,7 +52,7 @@
         "last_activity": "2024-04-05T09:08:33Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/alvaro17f/wrestic": {
       "status": {
@@ -61,25 +61,25 @@
         "last_activity": "2025-02-26T15:25:46Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/arkeep-io/arkeep": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-22T05:11:19Z",
+        "last_activity": "2026-06-29T07:26:17Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/backube/volsync": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-19T13:45:27Z",
+        "last_activity": "2026-06-25T14:03:32Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/camptocamp/bivac": {
       "status": {
@@ -88,16 +88,16 @@
         "last_activity": "2026-03-18T21:04:14Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/creativeprojects/resticprofile": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-05-05T20:16:04Z",
+        "last_activity": "2026-06-28T20:39:21Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/cupcakearmy/autorestic": {
       "status": {
@@ -106,7 +106,7 @@
         "last_activity": "2026-04-05T22:09:11Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/dawiddyd/resticopia": {
       "status": {
@@ -115,7 +115,7 @@
         "last_activity": "2026-05-26T08:09:37Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/djmaze/resticker": {
       "status": {
@@ -124,7 +124,7 @@
         "last_activity": "2025-12-01T23:44:05Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/drdo/redu/": {
       "status": {
@@ -133,7 +133,7 @@
         "last_activity": "2026-02-16T15:48:30Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/ducalex/prestic": {
       "status": {
@@ -142,16 +142,16 @@
         "last_activity": "2023-03-28T04:35:22Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/emuell/restic-browser": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-04-13T12:07:31Z",
+        "last_activity": "2026-06-22T11:23:29Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/erikw/restic-automatic-backup-scheduler": {
       "status": {
@@ -160,7 +160,7 @@
         "last_activity": "2026-02-09T18:07:17Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/garethgeorge/backrest": {
       "status": {
@@ -169,16 +169,16 @@
         "last_activity": "2026-06-10T00:52:16Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/hddq/restoid": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-21T02:01:31Z",
+        "last_activity": "2026-06-26T17:00:44Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/hn/restic2influx": {
       "status": {
@@ -187,16 +187,16 @@
         "last_activity": "2022-12-04T19:48:54Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/kimono-koans/httm": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-21T07:58:09Z",
+        "last_activity": "2026-06-29T00:07:47Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/kmwoley/restic-windows-backup": {
       "status": {
@@ -205,7 +205,7 @@
         "last_activity": "2025-02-21T06:01:41Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/kubackup/kubackup": {
       "status": {
@@ -214,16 +214,16 @@
         "last_activity": "2026-06-01T00:48:43Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/lawndoc/stack-back": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-19T19:59:16Z",
+        "last_activity": "2026-06-27T00:38:19Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/lhns/restic-android": {
       "status": {
@@ -232,7 +232,7 @@
         "last_activity": "2026-02-26T21:22:16Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/lminlone/repliqate": {
       "status": {
@@ -241,7 +241,7 @@
         "last_activity": "2025-12-16T14:35:11Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/lobaro/restic-backup-docker": {
       "status": {
@@ -250,7 +250,7 @@
         "last_activity": "2025-12-01T04:50:00Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/maxkueng/restique": {
       "status": {
@@ -259,7 +259,7 @@
         "last_activity": "2021-02-21T00:17:47Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/mittwald/brudi": {
       "status": {
@@ -268,7 +268,7 @@
         "last_activity": "2025-10-13T08:03:25Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/netinvent/npbackup": {
       "status": {
@@ -277,25 +277,25 @@
         "last_activity": "2026-06-05T18:42:57Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/ngosang/restic-exporter": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-02-18T17:58:41Z",
+        "last_activity": "2026-06-25T11:33:41Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/nicotsx/zerobyte": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-22T07:51:15Z",
+        "last_activity": "2026-06-29T07:12:32Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/nils-werner/crestic": {
       "status": {
@@ -304,7 +304,7 @@
         "last_activity": "2025-06-10T08:47:54Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/peterrus/restic-wrapper": {
       "status": {
@@ -313,7 +313,7 @@
         "last_activity": "2022-08-21T15:17:04Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/plutonhq/pluton": {
       "status": {
@@ -322,16 +322,16 @@
         "last_activity": "2026-06-15T03:37:16Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/rclone/rclone": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-21T16:07:09Z",
+        "last_activity": "2026-06-28T21:53:06Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/rest-lite/RestLite": {
       "status": {
@@ -340,7 +340,7 @@
         "last_activity": "2025-08-25T06:38:06Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/roles-ansible/ansible_role_restic": {
       "status": {
@@ -349,7 +349,7 @@
         "last_activity": "2026-06-19T09:32:32Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/rubiojr/rapi": {
       "status": {
@@ -358,7 +358,7 @@
         "last_activity": "2023-02-27T07:11:02Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/rubiojr/rplay": {
       "status": {
@@ -367,7 +367,7 @@
         "last_activity": "2021-01-07T01:51:11Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/rustic-rs/rustic": {
       "status": {
@@ -376,7 +376,7 @@
         "last_activity": "2026-06-15T07:34:25Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/sephiroth1395/restic-PyBM": {
       "status": {
@@ -385,7 +385,7 @@
         "last_activity": "2026-02-13T09:39:42Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/sergeymakinen/ResticScheduler": {
       "status": {
@@ -394,16 +394,16 @@
         "last_activity": "2026-03-01T18:42:33Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/sharkusmanch/playnite-ludusavi-restic": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-18T20:56:22Z",
+        "last_activity": "2026-06-23T12:52:27Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/sinnwerkstatt/runrestic": {
       "status": {
@@ -412,16 +412,16 @@
         "last_activity": "2026-06-15T08:31:49Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/srivatsshankar/rest-stop": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-22T03:59:51Z",
+        "last_activity": "2026-06-22T18:59:36Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/stashed/stash": {
       "status": {
@@ -430,7 +430,7 @@
         "last_activity": "2026-05-15T12:08:49Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/swampapp/swamp": {
       "status": {
@@ -439,7 +439,7 @@
         "last_activity": "2022-04-27T22:46:00Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/tigattack/ansible-role-restic-rest-server": {
       "status": {
@@ -448,16 +448,16 @@
         "last_activity": "2026-06-18T22:14:07Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://github.com/vshn/k8up": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-18T19:11:27Z",
+        "last_activity": "2026-06-28T13:40:06Z",
         "source": "github"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://gitlab.com/stormking/resticguigx/-/blob/master/README.md": {
       "status": {
@@ -466,16 +466,16 @@
         "last_activity": "2026-03-04T20:20:27.38Z",
         "source": "gitlab"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     },
     "https://gitlab.gnome.org/World/deja-dup": {
       "status": {
         "known": true,
         "archived": false,
-        "last_activity": "2026-06-22T06:28:30.127Z",
+        "last_activity": "2026-06-24T18:19:31.464Z",
         "source": "gitlab"
       },
-      "checked_at": "2026-06-22T08:01:20.127758225Z"
+      "checked_at": "2026-06-29T07:42:30.798507415Z"
     }
   }
 }
