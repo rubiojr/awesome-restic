@@ -18,7 +18,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [Déjà Dup Backups](https://gitlab.gnome.org/World/deja-dup) - A simple GUI for restic, well-integrated into your GNOME desktop
 * 🟢 [NPBackup](https://github.com/netinvent/npbackup) - A GUI & CLI backup program that adds Prometheus support, VSS fallback, cloud files excludes, etc... For Windows and Linux, and arm based NAS devices
 * 🟠 [Restic Backup GX](https://gitlab.com/stormking/resticguigx/-/blob/master/README.md) - Easy to use desktop GUI with profiles
-* 🟡 [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
+* 🟢 [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
 * 🟢 [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
 * 🟢 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 * 🟠 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
@@ -44,7 +44,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup
 * 🟢 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
 * 🔴 [resticara](https://github.com/VuteTech/Resticara) - Simple wrapper with a `.ini` configuration and mail notifications
-* 🟠 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
+* 🟢 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
 * 🟢 [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
 * 🟢 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
