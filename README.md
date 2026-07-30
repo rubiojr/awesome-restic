@@ -22,7 +22,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
 * 🟢 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 * 🟠 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
-* 🔴 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
+* 🟢 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
 * 🟠 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
 * 🟢 [Zerobyte](https://github.com/nicotsx/zerobyte) - A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends.
 * 🟢 [httm](https://github.com/kimono-koans/httm) - Interactive, file-level Time Machine-like tool for ZFS/btrfs/nilfs2 and Restic backups
@@ -34,7 +34,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 * 🟢 [Restoid](https://github.com/hddq/restoid) - A modern, root-based tool for backing up apps and their data on Android, powered by restic
 * 🟠 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
-* 🟢 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
+* 🟡 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
 * ⚪ [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
 ## Wrappers
