@@ -291,6 +291,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/ngosang/restic-exporter"
     description = "A Prometheus exporter for Restic backup metrics"
 
+  [[sections.items]]
+    name = "restic-drill"
+    url = "https://github.com/iacosta3994/restic-drill"
+    description = "Automated restore-drills: restores a rotating file from each repository and sha256-compares the bytes against the live file, proving backups restore correct data. Runs as a weekly systemd timer and alerts on failure."
+
 [[sections]]
   name = "Commercial"
 
