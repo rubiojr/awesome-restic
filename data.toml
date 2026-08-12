@@ -229,6 +229,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/lminlone/repliqate"
     description = "A modular Docker container/volume backup solution"
 
+  [[sections.items]]
+    name = "restic-backup-toolkit"
+    url = "https://github.com/andersyin/restic-backup-toolkit"
+    description = "3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud."
+
 [[sections]]
   name = "Documentation"
 
