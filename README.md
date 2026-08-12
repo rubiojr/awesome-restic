@@ -23,7 +23,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟡 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 * 🟠 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 * 🟢 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
-* 🟠 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
+* 🟢 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
 * 🟢 [Zerobyte](https://github.com/nicotsx/zerobyte) - A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends.
 * 🟢 [httm](https://github.com/kimono-koans/httm) - Interactive, file-level Time Machine-like tool for ZFS/btrfs/nilfs2 and Restic backups
 * 🟢 [Pluton](https://github.com/plutonhq/pluton) - A modern, self-hosted backup solution for secure, encrypted backups across local and cloud storage
@@ -52,6 +52,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
 * 🔴 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
 * 🟠 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
+* 🟢 [restic-backup-toolkit](https://github.com/andersyin/restic-backup-toolkit) - 3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud.
 
 ## Other
 
