@@ -128,16 +128,30 @@ func (c *Client) checkGitHub(ctx context.Context, ref RepoRef) Status {
 	endpoint := fmt.Sprintf("%s/repos/%s", base, ref.Path)
 
 	var body struct {
-		Archived bool      `json:"archived"`
-		PushedAt time.Time `json:"pushed_at"`
+		Archived bool `json:"archived"`
 	}
 	if err := c.getJSON(ctx, endpoint, true, &body); err != nil {
 		return Status{Source: "error", Err: err.Error()}
 	}
+
+	var commits []struct {
+		Commit struct {
+			Committer struct {
+				Date time.Time `json:"date"`
+			} `json:"committer"`
+		} `json:"commit"`
+	}
+	if err := c.getJSON(ctx, endpoint+"/commits?per_page=1", true, &commits); err != nil {
+		return Status{Source: "error", Err: err.Error()}
+	}
+	var lastActivity time.Time
+	if len(commits) > 0 {
+		lastActivity = commits[0].Commit.Committer.Date
+	}
 	return Status{
 		Known:        true,
 		Archived:     body.Archived,
-		LastActivity: body.PushedAt,
+		LastActivity: lastActivity,
 		Source:       "github",
 	}
 }

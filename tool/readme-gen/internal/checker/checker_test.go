@@ -14,10 +14,17 @@ import (
 
 func TestCheckGitHub(t *testing.T) {
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		assert.Equal(t, "/repos/foo/bar", r.URL.Path)
 		assert.Equal(t, "Bearer tok", r.Header.Get("Authorization"))
 		w.Header().Set("Content-Type", "application/json")
-		_, _ = w.Write([]byte(`{"archived": true, "pushed_at": "2020-01-02T03:04:05Z"}`))
+		switch r.URL.Path {
+		case "/repos/foo/bar":
+			_, _ = w.Write([]byte(`{"archived": true, "pushed_at": "2026-06-22T11:23:29Z"}`))
+		case "/repos/foo/bar/commits":
+			assert.Equal(t, "1", r.URL.Query().Get("per_page"))
+			_, _ = w.Write([]byte(`[{"commit":{"committer":{"date":"2020-01-02T03:04:05Z"}}}]`))
+		default:
+			http.NotFound(w, r)
+		}
 	}))
 	defer srv.Close()
 

@@ -14,14 +14,14 @@ Awesome [Restic](https://restic.net) related projects.
 
 ## Apps
 
-* 🟢 [Restic Browser](https://github.com/emuell/restic-browser) - A clientside GUI (Win/Linux/Mac) to browser your Restic repository snapshots
+* 🟠 [Restic Browser](https://github.com/emuell/restic-browser) - A clientside GUI (Win/Linux/Mac) to browser your Restic repository snapshots
 * 🟢 [Déjà Dup Backups](https://gitlab.gnome.org/World/deja-dup) - A simple GUI for restic, well-integrated into your GNOME desktop
 * 🟢 [NPBackup](https://github.com/netinvent/npbackup) - A GUI & CLI backup program that adds Prometheus support, VSS fallback, cloud files excludes, etc... For Windows and Linux, and arm based NAS devices
 * 🟢 [Restic Backup GX](https://gitlab.com/stormking/resticguigx/-/blob/master/README.md) - Easy to use desktop GUI with profiles
 * 🟢 [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
 * 🟢 [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
 * 🟡 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
-* 🟠 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
+* 🔴 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 * 🟢 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
 * 🟢 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
 * 🟢 [Zerobyte](https://github.com/nicotsx/zerobyte) - A backup automation tool built on top of Restic, offering a modern web interface to schedule, manage, and monitor encrypted backups across multiple storage backends.
@@ -46,7 +46,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🔴 [resticara](https://github.com/VuteTech/Resticara) - Simple wrapper with a `.ini` configuration and mail notifications
 * 🟢 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
-* 🟢 [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
+* 🔴 [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
 * 🟢 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
 * 🟠 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
@@ -56,13 +56,13 @@ Awesome [Restic](https://restic.net) related projects.
 
 ## Other
 
-* 🟠 [BIVAC](https://github.com/camptocamp/bivac) - Backup Interface for Volumes Attached to Containers
+* 🔴 [BIVAC](https://github.com/camptocamp/bivac) - Backup Interface for Volumes Attached to Containers
 * 🟡 [Stash](https://github.com/stashed/stash) - Backup your Kubernetes Stateful Applications
 * 🟢 [k8up](https://github.com/vshn/k8up) - Kubernetes and OpenShift Backup Operator
 * 🔴 [brudi](https://github.com/mittwald/brudi) - Easy, incremental and encrypted backup creation / restoration for different backends
 * 🟢 [volsync](https://github.com/backube/volsync) - Asynchronous data replication for Kubernetes volumes
 * 🟢 [rclone serve restic](https://rclone.org/commands/rclone_serve_restic/) - Serve the remote for restic's REST backend API locally and allows restic to use rclone as a data storage mechanism for cloud providers that restic does not support directly (e.g. WebDAV)
-* 🟢 [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) - Ansible role to deploy and configure restic.
+* 🟠 [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) - Ansible role to deploy and configure restic.
 * 🟠 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
 * 🟢 [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) - Ansible role to deploy restic's Rest Server in a Docker container.
 * 🟢 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
@@ -81,7 +81,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 These projects are archived upstream or have seen no activity for over two years.
 
-* 🔴 [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup _(Apps · last activity 2020-12-06)_
+* 🔴 [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup _(Apps · last activity 2019-09-29)_
 * 📦 [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository _(Apps · archived)_
 * 📦 [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · archived)_
 * 🔴 [Resticity](https://github.com/ad-on-is/resticity) - A beautiful cross-platform UI for restic backup _(Apps · last activity 2024-04-05)_
