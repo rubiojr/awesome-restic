@@ -34,7 +34,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 * 🟢 [Restoid](https://github.com/hddq/restoid) - A modern, root-based tool for backing up apps and their data on Android, powered by restic
 * 🟠 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
-* 🟡 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
+* 🟢 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
 * ⚪ [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
 ## Wrappers
@@ -42,7 +42,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟠 [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic
 * 🔴 [crestic](https://github.com/nils-werner/crestic) - Configurable restic wrapper with support for profiles and environments
 * 🟢 [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup
-* 🟢 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
+* 🟡 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
 * 🔴 [resticara](https://github.com/VuteTech/Resticara) - Simple wrapper with a `.ini` configuration and mail notifications
 * 🟢 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
@@ -51,7 +51,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟠 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
 * 🔴 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
-* 🟠 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
+* 🔴 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
 * 🟢 [restic-backup-toolkit](https://github.com/andersyin/restic-backup-toolkit) - 3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud.
 
 ## Other
