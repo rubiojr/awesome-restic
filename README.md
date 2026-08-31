@@ -33,7 +33,7 @@ Awesome [Restic](https://restic.net) related projects.
 ## Mobile
 
 * 🟢 [Restoid](https://github.com/hddq/restoid) - A modern, root-based tool for backing up apps and their data on Android, powered by restic
-* 🟠 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
+* 🔴 [restic-android](https://github.com/lhns/restic-android) - Restic Backup Android App (Unofficial)
 * 🟢 [Resticopia](https://resticopia.dydlak.cloud/) - Powerful data backups powered by Restic, running natively on your Android device
 * ⚪ [Restique iOS App](https://apps.apple.com/app/restique/id6744624567) - Securely access your Restic backup — anywhere, anytime on iOS!
 
@@ -48,7 +48,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
 * 🔴 [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
 * 🟢 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
-* 🟠 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
+* 🟢 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
 * 🔴 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
 * 🔴 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
@@ -65,7 +65,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟠 [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) - Ansible role to deploy and configure restic.
 * 🟠 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
 * 🟢 [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) - Ansible role to deploy restic's Rest Server in a Docker container.
-* 🟢 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
+* 🟡 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
 * 🟢 [restic-drill](https://github.com/iacosta3994/restic-drill) - Automated restore-drills: restores a rotating file from each repository and sha256-compares the bytes against the live file, proving backups restore correct data. Runs as a weekly systemd timer and alerts on failure.
 
 ## Commercial
@@ -84,7 +84,7 @@ These projects are archived upstream or have seen no activity for over two years
 * 🔴 [Restatic](https://github.com/Mebus/restatic) - A Boring Open Source GUI for Restic Backup _(Apps · last activity 2019-09-29)_
 * 📦 [RPlay](https://github.com/rubiojr/rplay) - Command line audio player for your Restic repository _(Apps · archived)_
 * 📦 [Swamp](https://github.com/swampapp/swamp) - Navigate your backed up data without drowning _(Apps · archived)_
-* 🔴 [Resticity](https://github.com/ad-on-is/resticity) - A beautiful cross-platform UI for restic backup _(Apps · last activity 2024-04-05)_
+* 📦 [Resticity](https://github.com/ad-on-is/resticity) - A beautiful cross-platform UI for restic backup _(Apps · archived)_
 * 📦 [restic-PyBM](https://github.com/sephiroth1395/restic-PyBM) - A Python 3 wrapper to manage and monitor backups with restic _(Wrappers · archived)_
 * 🔴 [restique](https://github.com/maxkueng/restique) - A wrapper around restic with profiles _(Wrappers · last activity 2021-02-21)_
 * 🔴 [prestic](https://github.com/ducalex/prestic) - Prestic is a profile manager and task scheduler for restic _(Wrappers · last activity 2023-03-28)_
