@@ -107,6 +107,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/srivatsshankar/rest-stop"
     description = "Simple restic backups"
 
+  [[sections.items]]
+    name = "Keelhaven"
+    url = "https://github.com/shenxianpeng/keelhaven"
+    description = "A macOS menu bar app for scheduled restic backups to a local drive, S3-compatible bucket, or SFTP/NAS. Free and open source"
+
 [[sections]]
   name = "Mobile"
 
