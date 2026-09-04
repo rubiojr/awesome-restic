@@ -29,6 +29,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [Pluton](https://github.com/plutonhq/pluton) - A modern, self-hosted backup solution for secure, encrypted backups across local and cloud storage
 * 🟢 [Arkeep](https://github.com/arkeep-io/arkeep) - Manage backups across all your servers from a single dashboard
 * 🟢 [Rest Stop](https://github.com/srivatsshankar/rest-stop) - Simple restic backups
+* 🟢 [Keelhaven](https://github.com/shenxianpeng/keelhaven) - A macOS menu bar app for scheduled restic backups to a local drive, S3-compatible bucket, or SFTP/NAS. Free and open source
 
 ## Mobile
 
@@ -40,7 +41,7 @@ Awesome [Restic](https://restic.net) related projects.
 ## Wrappers
 
 * 🟠 [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic
-* 🔴 [crestic](https://github.com/nils-werner/crestic) - Configurable restic wrapper with support for profiles and environments
+* 🟢 [crestic](https://github.com/nils-werner/crestic) - Configurable restic wrapper with support for profiles and environments
 * 🟢 [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup
 * 🟡 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
 * 🔴 [resticara](https://github.com/VuteTech/Resticara) - Simple wrapper with a `.ini` configuration and mail notifications
