@@ -20,7 +20,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [Restic Backup GX](https://gitlab.com/stormking/resticguigx/-/blob/master/README.md) - Easy to use desktop GUI with profiles
 * 🟡 [resticterm](https://github.com/GPh83/resticterm) - a multi-platform UI for restic. It can be used alone as a backup tool or with restic command line to manage a repository
 * 🟢 [backrest](https://github.com/garethgeorge/backrest) - Fully open source web UI wrapper for restic. Supports scheduled backups and browsing/restoring from snapshots.
-* 🟡 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
+* 🟠 [Kubackup](https://github.com/kubackup/kubackup) - A Simple, Open-Source, and Modern Web UI for Restic.
 * 🔴 [Restic Scheduler](https://github.com/sergeymakinen/ResticScheduler) - A Mac menu bar app to perform scheduled backups using Restic
 * 🟢 [RestLite](https://github.com/rest-lite/RestLite) - A simple backup program for Windows platform, supporting browsing snapshots by file directory
 * 🟢 [redu](https://github.com/drdo/redu/) - A disk usage analyzer like ncdu but for your restic repository
@@ -48,7 +48,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟡 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
 * 🔴 [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
-* 🟢 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
+* 🟡 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
 * 🟢 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
 * 🔴 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
