@@ -43,7 +43,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟠 [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic
 * 🟢 [crestic](https://github.com/nils-werner/crestic) - Configurable restic wrapper with support for profiles and environments
 * 🟡 [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup
-* 🟡 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
+* 🟠 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
 * 🔴 [resticara](https://github.com/VuteTech/Resticara) - Simple wrapper with a `.ini` configuration and mail notifications
 * 🟡 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
@@ -51,7 +51,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟡 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
 * 🟢 [restic-automatic-backup-scheduler](https://github.com/erikw/restic-automatic-backup-scheduler) - Automatic restic backup using Backblaze B2 storage and either Linux systemd timers, macOS LaunchAgent, Windows ScheduledTask or simply cron
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
-* 🔴 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
+* 🟢 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
 * 🔴 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
 * 🟢 [restic-backup-toolkit](https://github.com/andersyin/restic-backup-toolkit) - 3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud.
 
@@ -77,6 +77,7 @@ Awesome [Restic](https://restic.net) related projects.
 * ⚪ [BackUpScale](https://backupscale.com)
 * ⚪ [Storvex](https://storvex.es)
 * ⚪ [rsync.net](https://www.rsync.net/products/restic.html)
+* ⚪ [Vaultwitness](https://vaultwitness.com) - Self-hosted restore testing for restic: reads a real file back from the newest snapshot, runs restic check with --read-data-subset spread over several nights, and warns about late backups and failed backup jobs. Open-source agent (Apache 2.0); the dashboard is paid, free for 2 servers.
 
 ## Archived / Inactive
 
