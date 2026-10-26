@@ -28,7 +28,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [httm](https://github.com/kimono-koans/httm) - Interactive, file-level Time Machine-like tool for ZFS/btrfs/nilfs2 and Restic backups
 * 🟢 [Pluton](https://github.com/plutonhq/pluton) - A modern, self-hosted backup solution for secure, encrypted backups across local and cloud storage
 * 🟢 [Arkeep](https://github.com/arkeep-io/arkeep) - Manage backups across all your servers from a single dashboard
-* 🟢 [Rest Stop](https://github.com/srivatsshankar/rest-stop) - Simple restic backups
+* 🟡 [Rest Stop](https://github.com/srivatsshankar/rest-stop) - Simple restic backups
 * 🟢 [Keelhaven](https://github.com/shenxianpeng/keelhaven) - A macOS menu bar app for scheduled restic backups to a local drive, S3-compatible bucket, or SFTP/NAS. Free and open source
 
 ## Mobile
@@ -53,7 +53,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🔴 [wrestic](https://github.com/alvaro17f/wrestic) - 👽 A wrapper around restic built in rust
 * 🟢 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
 * 🔴 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
-* 🟢 [restic-backup-toolkit](https://github.com/andersyin/restic-backup-toolkit) - 3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud.
+* 🟡 [restic-backup-toolkit](https://github.com/andersyin/restic-backup-toolkit) - 3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud.
 
 ## Other
 
@@ -64,9 +64,9 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [volsync](https://github.com/backube/volsync) - Asynchronous data replication for Kubernetes volumes
 * 🟢 [rclone serve restic](https://rclone.org/commands/rclone_serve_restic/) - Serve the remote for restic's REST backend API locally and allows restic to use rclone as a data storage mechanism for cloud providers that restic does not support directly (e.g. WebDAV)
 * 🟢 [ansible_role_restic](https://github.com/roles-ansible/ansible_role_restic) - Ansible role to deploy and configure restic.
-* 🟠 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
+* 🟢 [ansible-role-autorestic](https://github.com/FuzzyMistborn/ansible-role-autorestic) - An Ansible role which installs/updates restic and autorestic and creates autorestic config files.
 * 🟢 [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) - Ansible role to deploy restic's Rest Server in a Docker container.
-* 🟡 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
+* 🟠 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
 * 🟡 [restic-drill](https://github.com/iacosta3994/restic-drill) - Automated restore-drills: restores a rotating file from each repository and sha256-compares the bytes against the live file, proving backups restore correct data. Runs as a weekly systemd timer and alerts on failure.
 
 ## Commercial
