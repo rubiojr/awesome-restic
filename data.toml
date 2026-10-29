@@ -336,5 +336,5 @@ intro = "Awesome [Restic](https://restic.net) related projects."
   [[sections.items]]
     name = "Vaultwitness"
     url = "https://vaultwitness.com"
-    description = "Self-hosted restore testing for restic: reads a real file back from the newest snapshot, runs restic check with --read-data-subset spread over several nights, and warns about late backups and failed backup jobs. Open-source agent (Apache 2.0); the dashboard is paid, free for 2 servers."
+    description = "Self-hosted restore testing for restic"
     skip_check = true
