@@ -1,0 +1,77 @@
+name: Regenerate README
+
+# Regenerates README.md whenever its inputs change on main — typically when a
+# contributor PR adding an entry to data.toml is merged — and commits the
+# result straight to main. Pushes made with GITHUB_TOKEN do not trigger new
+# workflow runs, so the bot commit cannot loop.
+#
+# Triggering on push (rather than pull_request_target) means the job only ever
+# runs code that is already on main, never untrusted PR code with a write token.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data.toml
+      - tool/readme-gen/**.go
+      - tool/readme-gen/go.mod
+      - tool/readme-gen/go.sum
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Serialise runs so back-to-back merges don't race each other's pushes.
+concurrency:
+  group: regen-readme
+  cancel-in-progress: false
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache-dependency-path: tool/readme-gen/go.sum
+
+      - name: Run tests
+        working-directory: tool/readme-gen
+        run: go test ./...
+
+      - name: Generate README
+        working-directory: tool/readme-gen
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: go run .
+
+      - name: Commit and push
+        run: |
+          # Only the README is committed; the status cache is refreshed by the
+          # weekly curate workflow, which keeps per-merge commits free of
+          # checked_at timestamp churn.
+          git checkout -- tool/readme-gen/.cache/status.json
+
+          if git diff --quiet -- README.md; then
+            echo "README already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: regenerate README"
+
+          # main may have moved since checkout (e.g. a manual push); rebase
+          # and retry a few times before giving up.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt); rebasing onto latest main."
+            git pull --rebase origin main
+          done
+          echo "Failed to push after 3 attempts." >&2
+          exit 1
