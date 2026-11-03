@@ -68,6 +68,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [ansible-role-restic-rest-server](https://github.com/tigattack/ansible-role-restic-rest-server) - Ansible role to deploy restic's Rest Server in a Docker container.
 * 🟠 [restic-exporter](https://github.com/ngosang/restic-exporter) - A Prometheus exporter for Restic backup metrics
 * 🟡 [restic-drill](https://github.com/iacosta3994/restic-drill) - Automated restore-drills: restores a rotating file from each repository and sha256-compares the bytes against the live file, proving backups restore correct data. Runs as a weekly systemd timer and alerts on failure.
+* 🟢 [restore-drill](https://github.com/kd-011/restore-drill) - Restores the latest restic snapshot into a temp dir, runs a check you chose and records pass or fail. Also handles SQLite, tar and pg_dump backups.
 
 ## Commercial
 
