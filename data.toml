@@ -306,6 +306,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/iacosta3994/restic-drill"
     description = "Automated restore-drills: restores a rotating file from each repository and sha256-compares the bytes against the live file, proving backups restore correct data. Runs as a weekly systemd timer and alerts on failure."
 
+  [[sections.items]]
+    name = "restore-drill"
+    url = "https://github.com/kd-011/restore-drill"
+    description = "Restores the latest restic snapshot into a temp dir, runs a check you chose and records pass or fail. Also handles SQLite, tar and pg_dump backups."
+
 [[sections]]
   name = "Commercial"
 
