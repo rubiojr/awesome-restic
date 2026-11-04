@@ -239,6 +239,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/andersyin/restic-backup-toolkit"
     description = "3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud."
 
+  [[sections.items]]
+    name = "restic-jvm"
+    url = "https://github.com/ppuetsch/restic-jvm"
+    description = "Kotlin/Java library that drives restic: typed results, cancellation and optional bundled binaries"
+
 [[sections]]
   name = "Documentation"
 
