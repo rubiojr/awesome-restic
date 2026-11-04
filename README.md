@@ -54,6 +54,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [restic-backup-docker](https://github.com/lobaro/restic-backup-docker) - A Docker container to automate restic backups
 * 🔴 [Repliqate](https://github.com/lminlone/repliqate) - A modular Docker container/volume backup solution
 * 🟡 [restic-backup-toolkit](https://github.com/andersyin/restic-backup-toolkit) - 3-tier macOS backup: rsync mirror + restic cold backup + SHA256 audit. launchd automation, zero cloud.
+* 🟢 [restic-jvm](https://github.com/ppuetsch/restic-jvm) - Kotlin/Java library that drives restic: typed results, cancellation and optional bundled binaries
 
 ## Other
 
