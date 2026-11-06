@@ -112,6 +112,11 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://github.com/shenxianpeng/keelhaven"
     description = "A macOS menu bar app for scheduled restic backups to a local drive, S3-compatible bucket, or SFTP/NAS. Free and open source"
 
+  [[sections.items]]
+    name = "restoric"
+    url = "https://github.com/borje/restoric"
+    description = "A read-only, Time Machine-style terminal UI for browsing and restoring restic backups"
+
 [[sections]]
   name = "Mobile"
 
