@@ -30,6 +30,7 @@ Awesome [Restic](https://restic.net) related projects.
 * 🟢 [Arkeep](https://github.com/arkeep-io/arkeep) - Manage backups across all your servers from a single dashboard
 * 🟡 [Rest Stop](https://github.com/srivatsshankar/rest-stop) - Simple restic backups
 * 🟢 [Keelhaven](https://github.com/shenxianpeng/keelhaven) - A macOS menu bar app for scheduled restic backups to a local drive, S3-compatible bucket, or SFTP/NAS. Free and open source
+* 🟢 [restoric](https://github.com/borje/restoric) - A read-only, Time Machine-style terminal UI for browsing and restoring restic backups
 
 ## Mobile
 
