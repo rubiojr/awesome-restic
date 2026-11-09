@@ -10,7 +10,7 @@ Awesome [Restic](https://restic.net) related projects.
 
 ## Compatible implementations
 
-* 🟡 [Rustic](https://github.com/rustic-rs/rustic) - A restic-compatible backup tool written in pure Rust
+* 🟢 [Rustic](https://github.com/rustic-rs/rustic) - A restic-compatible backup tool written in pure Rust
 
 ## Apps
 
@@ -43,10 +43,10 @@ Awesome [Restic](https://restic.net) related projects.
 
 * 🟠 [autorestic](https://github.com/cupcakearmy/autorestic) - High level CLI utility for restic
 * 🟢 [crestic](https://github.com/nils-werner/crestic) - Configurable restic wrapper with support for profiles and environments
-* 🟡 [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup
+* 🟠 [resticprofile](https://github.com/creativeprojects/resticprofile) - Configuration profiles for restic backup
 * 🟠 [runrestic](https://github.com/sinnwerkstatt/runrestic) - A wrapper script for Restic backup software that inits, creates, prunes and checks backups
 * 🟢 [resticara](https://github.com/VuteTech/Resticara) - Simple wrapper with a `.ini` configuration and mail notifications
-* 🟡 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
+* 🟠 [resticker](https://github.com/djmaze/resticker) - Run automatic restic backups via a Docker container
 * 🔴 [restic-windows-backup](https://github.com/kmwoley/restic-windows-backup) - Powershell scripts to run Restic backups on Windows
 * 🔴 [stack-back](https://github.com/lawndoc/stack-back) - Backup tool for Docker Compose stacks that backs up container volumes with simple container labels
 * 🟡 [Ludusavi Restic Playnite Plugin](https://github.com/sharkusmanch/playnite-ludusavi-restic) - Plugin for [Playnite](https://playnite.link) that allows for creating point-in-time snapshots of game save data.
