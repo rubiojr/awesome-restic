@@ -82,6 +82,7 @@ Awesome [Restic](https://restic.net) related projects.
 * ⚪ [Storvex](https://storvex.es)
 * ⚪ [rsync.net](https://www.rsync.net/products/restic.html)
 * ⚪ [Vaultwitness](https://vaultwitness.com) - Self-hosted restore testing for restic
+* ⚪ [ServerCrate](https://servercrate.net/restic-backup-server/)
 
 ## Archived / Inactive
 
