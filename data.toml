@@ -353,3 +353,7 @@ intro = "Awesome [Restic](https://restic.net) related projects."
     url = "https://vaultwitness.com"
     description = "Self-hosted restore testing for restic"
     skip_check = true
+    
+  [[sections.items]]
+    name = "ServerCrate"
+    url = "https://servercrate.net/restic-backup-server/"
